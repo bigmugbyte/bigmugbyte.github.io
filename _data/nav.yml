@@ -4,20 +4,16 @@
 - name: About
   path: about.html
   section_id: about
-- name: Services
-  path: services.html
-  section_id: services
-- name: Portfolio
-  path: portfolio.html
-  section_id: portfolio
+- name: Lazy Squirell
+  path: lazy-squirell.html
+  section_id: lazy-squirell
   children:
-    - name: Portfolio
-      path: portfolio.html
-    - name: Portfolio item
-      path: portfolio-item.html
+    - name: About
+      path: lazy-squirell.html#about
+    - name: Help
+      path: lazy-squirell.html#help
+    - name: News
+      path: lazy-squirell.html#news      
 - name: Contact
   path: contact.html
   section_id: contact
-- name: Blog
-  path: blog/
-  section_id: blog
