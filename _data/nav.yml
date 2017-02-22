@@ -4,16 +4,16 @@
 - name: About
   path: about.html
   section_id: about
-- name: Lazy Squirell
-  path: lazy-squirell.html
-  section_id: lazy-squirell
+- name: Lazy Squirrel
+  path: lazy-squirrel.html
+  section_id: lazy-squirrel
   children:
     - name: About
-      path: lazy-squirell.html#about
+      path: lazy-squirrel.html#about
     - name: Help
-      path: lazy-squirell.html#help
+      path: lazy-squirrel.html#help
     - name: News
-      path: lazy-squirell.html#news      
+      path: lazy-squirrel.html#news      
 - name: Contact
   path: contact.html
   section_id: contact

@@ -1232,6 +1232,9 @@ body.screenshot {
   line-height: 48px;
   margin-bottom: 30px;
 }
+#screenshots .modBoxedTextSlider .box{
+  padding: 0;
+}
 .modCallToAction p {
   font-size: 1.28571rem;
   letter-spacing: 1px;
@@ -3180,6 +3183,19 @@ body {
 .modTestimonials.simple .slick-slider {
   margin-bottom: 10px;
 }
+.google-play-button {
+    margin: 0 -14px;
+}
+.google-play-button img {
+  height: 73px;
+}
+.appstore-button {
+  margin-left: 10px;
+}
+.appstore-button img {
+  height: 48px;
+}
+
 @media only screen and (max-width: 60em) {
   .modTeamMember .overlay {
     opacity: 1;
