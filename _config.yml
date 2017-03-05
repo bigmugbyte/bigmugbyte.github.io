@@ -14,4 +14,4 @@ github_username:  jekyll
 markdown: kramdown
 
 
-exclude: ["docker-compose.yml"]
+exclude: ["doc", "docker-compose.yml", "README.md"]
