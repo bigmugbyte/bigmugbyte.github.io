@@ -103,6 +103,7 @@ testimonials:
   - text: "Reprehenderit eos et non et ut eum reprehenderit quis sequi quia vel repellendus id. Velit quit blanditiis dolor quam error eos dolores sequi eaque rerum est. Velit quit blanditiis dolor quam error eos dolores sequi eaque rerum est."
     author: David White
     position: Designer at Huglab
+news_tag: lazy-squirrel
 ---
 <div class='advanced mod modDefaultSlider'>
   <div class='sequence' data-autostop='on' data-timeout='0'>
@@ -188,6 +189,30 @@ testimonials:
     </div>
   </div>
   <div class='three spacing'></div>
+</div>
+
+<div class='full news' style='background: #f5f5f5'>
+  <div class='row'>
+    <div class='large-12 columns'>
+      <h4 style='color: #999'>Lazy Squirrel</h4>
+      <h2>What's new?</h2>
+      <div class='mod modBoxedTextSlider'>
+        <div class='boxes' data-slick='{"autoplay": false, "infinite": false}'>
+          {% for post in site.posts %}
+          {% if post.tags contains page.news_tag %}
+            <div class='box' style=''>
+              <div class='date'>{{post.date | date: '%B %d, %Y'}}</div>
+              <h4>{{post.title}}</h4>
+              <div class='excerpt'>{{post.excerpt}}</div>
+              <a class='button small' href='{{post.url}}'>Read more</a>
+            </div>
+          {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class='four spacing'></div>
 </div>
 
 <div class='full'>

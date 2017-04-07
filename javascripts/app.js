@@ -275,8 +275,7 @@ jQuery(document).foundation();
     onBinding: function() {
       var $ctx = this.$ctx;
 
-
-      $('.boxes', $ctx).slick({
+      var slickOpts = {
         slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true,
@@ -298,6 +297,11 @@ jQuery(document).foundation();
             }
           }
         ]
+      }
+
+      $('.boxes', $ctx).each(function() {
+        var customOpts = $(this).data('slick');
+        $(this).slick(Object.assign({}, slickOpts, customOpts));
       });
 
     }

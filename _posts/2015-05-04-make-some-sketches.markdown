@@ -8,6 +8,7 @@ categories:
 tags:
   - design
   - photography
+  - lazy-squirrel
 author: admin
 images:
   - images/@stock/blog-3.jpg

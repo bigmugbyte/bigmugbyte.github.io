@@ -7,6 +7,7 @@ categories:
   - Web Development
 tags:
   - javascript
+  - lazy-squirrel  
 author: admin
 images:
 excerpt:

@@ -2530,6 +2530,24 @@ body {
   height: 48px;
 }
 
+.news .modBoxedTextSlider .box {
+  text-align: left;
+}
+
+.news .box {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+.news .box .excerpt {
+  overflow: hidden;
+  margin-bottom: 1.42857rem;
+}
+.news .box .button {
+  margin-bottom: 0;
+  align-self: flex-start;
+}
+
 @media only screen and (max-width: 60em) {
   .modTeamMember .overlay {
     opacity: 1;

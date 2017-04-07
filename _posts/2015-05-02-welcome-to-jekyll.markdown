@@ -6,6 +6,7 @@ categories: jekyll update
 tags:
   - logo
   - development
+  - lazy-squirrel
 author: admin
 images:
 ---
