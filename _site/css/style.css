@@ -605,6 +605,20 @@ form input.error, form textarea.error {
   margin-right: 10px;
 }
 
+#footer .button {
+  color: #333;
+  background-color: #eee;
+  border: none;
+}
+#footer .button:hover {
+  color: #333;
+  background-color: #F9CE06;
+}
+
+#footer .logo img {
+  background-color: #555;
+}
+
 body.screenshot {
   display: block;
 }
@@ -2546,6 +2560,10 @@ body {
 .news .box .button {
   margin-bottom: 0;
   align-self: flex-start;
+}
+
+.logo img {
+  display: block;
 }
 
 @media only screen and (max-width: 60em) {

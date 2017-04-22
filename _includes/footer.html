@@ -3,24 +3,22 @@
   <div class='row'>
     <div class='large-3 medium-3 columns'>
       <h1>
-        <a href='index.html'>
-          <img alt="" src="{{site.url}}/images/logo-grey.png" />
+        <a href='index.html' class="logo">
+          <img alt="" src="{{site.url}}/images/logo-white.svg" />
         </a>
       </h1>
-      <p>©2014 {{site.title}}. All rights reserved.</p>
+      <p>©{{ 'now' | date: "%Y" }} {{site.title}}. All rights reserved.</p>
       <div class='spacing'></div>
       <div class='spacing'></div>
     </div>
     <div class='large-3 medium-3 columns'>
       <div class='spacing'></div>
       <div class='links'>
-        <h4>Some pages</h4>
+        <h4>Navigation</h4>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="portfolio.html">View some works here</a></li>
-          <li><a href="blog.html">Follow our blog</a></li>
-          <li><a href="contact.html">Contact us</a></li>
-          <li><a href="services.html">Our services</a></li>
+          {% for item in site.data.nav %}
+            <li><a href="{{site.url}}/{{ item.path }}">{{ item.name }}</a></li>
+          {% endfor %}
         </ul>
       </div>
       <div class='spacing'></div>
@@ -30,8 +28,8 @@
       <div class='links'>
         <h4>Recent posts</h4>
         <ul>
-          {% for post in site.posts %}
-            <li><a href="{{post.url}}">{{post.title}}</a></li>
+          {% for post in site.posts limit:4 %}
+            <li><a href="{{site.url}}/{{post.url}}">{{post.title}}</a></li>
           {% endfor %}
         </ul>
       </div>
@@ -41,11 +39,13 @@
       <div class='spacing'></div>
       <h4>Contact us</h4>
       <ul>
-        <li>Phone: +86 (03) 9810 4612</li>
-        <li>Emial: info@devoll-team.com</li>
-        <li>Location: 41 Dean Street, London, UK</li>
+        <li>Email: <a href="mailto:{{site.email}}">{{site.email}}</a></li>
       </ul>
       <div class='spacing'></div>
+      <ul>
+        <li><a class="button small" href="{{site.url}}/contact.html">Contact form</a></li>
+      </ul>
+        <!--
       <ul class='socials'>
         <li>
           <a href='http://facebook.com'>
@@ -68,6 +68,7 @@
           </a>
         </li>
       </ul>
+        -->
       <div class='spacing'></div>
     </div>
   </div>
