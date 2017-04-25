@@ -69,23 +69,27 @@ jQuery(document).foundation();
 
     });
 
-    $('form#contact_form').validate({
-      messages: { },
-      submitHandler: function(form) {
-        $.ajax({
-          type: 'POST',
-          url: 'send.php',
-          data: $(form).serialize(),
-          success: function(data) {
-            if(data.match(/success/)) {
-              $(form).trigger('reset');
-              $('#thanks').show().fadeOut(5000);
-            }
-          }
-        });
-        return false;
-      }
-    });
+    // Current implementation uses normal post to formspree.io
+    // even if they have a ajax submit solution
+    // normal post is better because they also use reCAPTHA to prevent spam
+    // 
+    // $('form#contact_form').validate({
+    //   messages: { },
+    //   submitHandler: function(form) {
+    //     $.ajax({
+    //       type: 'POST',
+    //       url: 'send.php',
+    //       data: $(form).serialize(),
+    //       success: function(data) {
+    //         if(data.match(/success/)) {
+    //           $(form).trigger('reset');
+    //           $('#thanks').show().fadeOut(5000);
+    //         }
+    //       }
+    //     });
+    //     return false;
+    //   }
+    // });
 
     if($('.masonry-container').length > 0) {
 

@@ -8,9 +8,9 @@ section_id: contact
     <div class='medium-8 columns'>
       <div class='form'>
         <div class='row'>
-          <form id='contact_form' method='POST'>
+          <form id='contact_form' method='POST' action='https://formspree.io/{{site.email}}'>
             <div class='large-12 columns'>
-              <p id='thanks' style='display: none;'>
+              <p id='thanks'>
                 Thanks for contacting us, we'll be in touch soon!
               </p>
             </div>
@@ -20,6 +20,9 @@ section_id: contact
               <input class='required' name='subject' placeholder='SUBJECT' type='text'>
               <textarea class='required' name='message' placeholder='MESSAGE'></textarea>
               <input class='button white' type='submit'>
+
+              <input type='hidden' name='_subject' value='New contact form!' />
+              <input type='hidden' name='_next' value='{{site.url}}/contact.html#thanks' />
             </div>
           </form>
         </div>
@@ -28,14 +31,8 @@ section_id: contact
     </div>
     <div class='medium-4 columns'>
       <div class='contact-details'>
-        <h4>Our location:</h4>
-        <p>41 Dean Street, London, UK</p>
-        <h4>Our Phone:</h4>
-        <p>+86 (03) 9810 4612</p>
-        <h4>Fax:</h4>
-        <p>+6102 236338 5456</p>
         <h4>Our Email:</h4>
-        <p>{{site.email}}</p>
+        <p><a href='mailto:{{site.email}}'>{{site.email}}</a></p>
       </div>
     </div>
   </div>

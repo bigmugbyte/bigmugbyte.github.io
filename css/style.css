@@ -469,6 +469,20 @@ form input.error, form textarea.error {
   margin-bottom: 30px;
 }
 
+#contact_form #thanks {
+  display: none;
+  color: #F9CE06;
+  font-size: 1.5rem;
+  /* XXX a hack so that element would not be covered by the site menu
+   * when on /contact.html#thanks
+   */
+  margin-top: -100px;
+  padding-top: 100px;
+}
+#contact_form #thanks:target {
+  display: block;
+}
+
 /*Pager */
 .pager {
   width: 97%;
