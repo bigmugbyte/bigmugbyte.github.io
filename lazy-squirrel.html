@@ -2,7 +2,7 @@
 layout: default
 section_id: lazy-squirrel
 slides:
-  - bg: images/Squirrel-Banner.png
+  - bg_class: lazy-squirrel-banner
     buttons:
       animation: bottom-to-top slow
       class: large-12
@@ -13,13 +13,13 @@ slides:
           class: boxed
 
     infos:
-      - text: "&nbsp;Creative and responsive design"
+      - text: "&nbsp;A game that makes you think"
         animation: bottom-to-top
-      - text: "&nbsp;Many helpful shortcodes"
+      - text: "&nbsp;Challenging levels"
         animation: bottom-to-top
-      - text: "&nbsp;Simple but powerful theme options"
+      - text: "&nbsp;Keeps your brain fit"
         animation: bottom-to-top
-      - text: "&nbsp;Fully responsive"
+      - text: "&nbsp;Great way to spend time"
         animation: bottom-to-top
 screenshots:
   - images/screenshots/1.jpg
@@ -32,77 +32,39 @@ screenshots:
   - images/screenshots/8.jpg
   - images/screenshots/9.jpg  
   - images/screenshots/10.jpg
-works:
-  - image: images/@stock/one-page-work-1.jpg
-    title: Beautiful Girl
-    link_to: portfolio-item.html
-    class: graphic-design
-    desc: Design &amp; Development
-  - image: images/@stock/one-page-work-2.jpg
-    title: Look at me
-    link_to: portfolio-item.html
-    class: web-design print
-    desc: Design &amp; Development
-  - image: images/@stock/one-page-work-3.jpg
-    title: Am I cute
-    link_to: portfolio-item.html
-    class: brand
-    desc: Design &amp; Development
-  - image: images/@stock/one-page-work-4.jpg
-    title: Umbrella
-    link_to: portfolio-item.html
-    class: development
-    desc: Design &amp; Development
-  - image: images/@stock/one-page-work-5.jpg
-    title: Canned Bros
-    link_to: portfolio-item.html
-    class: print brand
-    desc: Design &amp; Development
-  - image: images/@stock/one-page-work-6.jpg
-    title: Hale
-    link_to: portfolio-item.html
-    class: web-design
-    desc: Design &amp; Development
-  - image: images/@stock/one-page-work-7.jpg
-    title: A beautiful day
-    link_to: portfolio-item.html
-    class: web-design
-    desc: Design &amp; Development
-  - image: images/@stock/one-page-work-8.jpg
-    title: Flower Book
-    link_to: portfolio-item.html
-    class: graphic-design
-    desc: Design &amp; Development
-  - image: images/@stock/one-page-work-2.jpg
-    title: Beautiful Girl
-    link_to: portfolio-item.html
-    class: graphic-design
-    desc: Design &amp; Development
-  - image: images/@stock/one-page-work-4.jpg
-    title: Look at me
-    link_to: portfolio-item.html
-    class: web-design print
-    desc: Design &amp; Development
-  - image: images/@stock/one-page-work-1.jpg
-    title: Am I cute
-    link_to: portfolio-item.html
-    class: brand
-    desc: Design &amp; Development
-  - image: images/@stock/one-page-work-6.jpg
-    title: Umbrella
-    link_to: portfolio-item.html
-    class: development
-    desc: Design &amp; Development
-testimonials:
-  - text: "Reprehenderit eos et non et ut eum reprehenderit quis sequi quia vel repellendus id. Velit quit blanditiis dolor quam error eos dolores sequi eaque rerum est. Velit quit blanditiis dolor quam error eos dolores sequi eaque rerum est."
-    author: David White
-    position: Designer at Huglab
-  - text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetuer sit amet magna adipiscing."
-    author: David White
-    position: Designer at Huglab
-  - text: "Reprehenderit eos et non et ut eum reprehenderit quis sequi quia vel repellendus id. Velit quit blanditiis dolor quam error eos dolores sequi eaque rerum est. Velit quit blanditiis dolor quam error eos dolores sequi eaque rerum est."
-    author: David White
-    position: Designer at Huglab
+faqs:
+  - question: How to play?
+    answer: "In order to solve a level, <b>continuous zones</b> need to be created for <b>each 
+      type of nut</b>. A zone is considered continuous if each nut(nut’s room) has at 
+      least one common edge with another nut of the same type.<br/>
+      Two nuts can be swapped or a whole row/column can be reversed. If there is <b>no wall</b>
+      in the direction a nut is moved, then it will just <b>exchange positions</b> with the nut 
+      from the next room. In case there is <b>a wall, or partial blocker</b>(vegetation textured room), 
+      in the direction a nut is moved, nut’s <b>positions will be reversed</b> for the whole row/column. 
+      A row/column that contains partial blocker(s) will allow only partial nuts reversal: 
+      nuts from the opposite rooms of partial blockers won’t be moved.<br/>
+      A row/column that contains <b>total blocker</b> (stone textured rooms) will <b>not allow 
+      row/column nuts reversal</b> at all."
+  - question: What are golden acorns and how to earn them?
+    answer: "Golden acorns are Lazy Squirrel’s <b>currency</b>.<br/>
+      Get them by <b>solving levels or requesting gift</b> golden acorns in the main screen.<br/>
+      Use them to buy lives or bombs."
+  - question: What is a bomb and where to use it?
+    answer: "A booster that can be used to destroy a wall during gameplay: drag a bomb 
+      from the button located at the top of the game screen, align the cursor’s pointer 
+      with the wall to destroy(bomb cursor should become opaque) and drop the bomb."
+  - question: A few words about lives?
+    answer: "There can be a <b>maximum of five lives</b>.<br/>
+      A lost level causes the loss of a life, but after <b>every twenty minutes</b> 
+      the number of lives is <b>increased by one</b>. To <b>get a life faster</b>, 
+      use <b>golden acorns</b>, <b>share</b> Lazy Squirrel Facebook 
+      page on your wall or <b>get a gift</b> 
+      life (in main menu screen)."   
+  - question: How can I share my highscores?
+    answer: "Use your G+ account to share a highscore or to see the leaderboard for 
+      the selected season(see buttons located in the bottom-right side of the levels 
+      panel in main menu screen).<br/>
+      Subsequent Google Play Services update and game restart might be needed."   
 news_tag: lazy-squirrel
 ---
 <div class='advanced mod modDefaultSlider'>
@@ -116,13 +78,13 @@ news_tag: lazy-squirrel
         {% endif %}
 
         <li class='frame {{class}}'>
-          <div class='bg' style='background-image: url({{slide.bg}});'></div>
+          <div class='bg {{slide.bg_class}}'></div>
           {% if slide.infos %}
             {% for info in slide.infos %}
               <div class='info{{forloop.index}} {{info.animation}}' style=''>
                 <div class='row'>
                   <div class='medium-10 large-8 columns'>
-                    <p class='fa fa-check' style='color: #fff;'>{{info.text}}</p>
+                    <p class='fa fa-check info-text'>{{info.text}}</p>
                     <div class='spacing'></div>
                   </div>
                 </div>
@@ -176,7 +138,7 @@ news_tag: lazy-squirrel
   <div class='four spacing'></div>
 </div>
 
-<div class='full'>
+<div class='full' id='about'>
   <div class='row'>
     <div class='large-12 columns'>
       <h4 style='color: #999'>Lazy Squirrel</h4>
@@ -191,7 +153,7 @@ news_tag: lazy-squirrel
   <div class='three spacing'></div>
 </div>
 
-<div class='full news' style='background: #f5f5f5'>
+<div class='full news' style='background: #f5f5f5' id='news'>
   <div class='row'>
     <div class='large-12 columns'>
       <h4 style='color: #999'>Lazy Squirrel</h4>
@@ -215,86 +177,22 @@ news_tag: lazy-squirrel
   <div class='four spacing'></div>
 </div>
 
-<div class='full'>
-  <div class='row'>
-    <div class='mod modGallery'>
-      <div class='gallery-nav'>
-        <ul>
-          <li class='current'>
-            <a data-cat='all' href='#'>All</a>
-          </li>
-          <li>
-            <a data-cat='graphic-design' href='#'>Graphic Design</a>
-          </li>
-          <li>
-            <a data-cat='web-design' href='#'>Web Design</a>
-          </li>
-          <li>
-            <a data-cat='brand' href='#'>Brand</a>
-          </li>
-          <li>
-            <a data-cat='development' href='#'>Development</a>
-          </li>
-          <li>
-            <a data-cat='print' href='#'>Print</a>
-          </li>
-        </ul>
-      </div>
-      <ul class='gallery large-block-grid-4 medium-block-grid-3 seperated small-block-grid-2'>
-        {% for work in page.works %}
-          <li class='{{work.class}}'>
-            <a href='{{work.link_to}}'>
-              <img alt="" src="{{site.url}}/{{work.image}}" />
-              <div class='overlay' style='background: rgba(143, 221, 115, 0.8);'>
-                <div class='thumb-info'>
-                  <h3>{{work.title}}</h3>
-                  <p>{{work.desc}}</p>
-                </div>
-              </div>
-            </a>
-          </li>
-        {% endfor %}
-      </ul>
-    </div>
-  </div>
-  <div class='four spacing'></div>
-  <div class='row'>
-    <div class='large-12 columns'>
-      <p class='centered-text'>
-        <a class='button' href='#'>See more works</a>
-      </p>
-    </div>
-  </div>
-  <div class='four spacing'></div>
-</div>
 
-<div class='full'>
+<div class='full' id='help'>
   <div class='row'>
     <div class='large-12 columns'>
-      <p class='centered-text'>
-        <i class='fa fa-quote-left' style='color: #F9CE06; font-size: 36px;'></i>
-      </p>
-    </div>
-  </div>
-  <div class='row'>
-    <div class='large-12 columns'>
-      <div class='mod modTestimonials'>
-        <div class='row'>
-          <div class='small-12 columns'>
-            <div class='items centered-text'>
-              {% for t in page.testimonials  %}
-                <div class='item'>
-                  <p class='quote'>{{t.text}}</p>
-                  <p class='author'>- {{t.author}}, {{t.position}}</p>
-                  <div class='two spacing'></div>
-                </div>
-              {% endfor %}
-            </div>
-          </div>
-          <div class='spacing'></div>
-        </div>
+      <h4 style='color: #999'>Lazy Squirrel</h4>
+      <h2>Help / FAQ</h2>
+      <div class='spacing'></div>
+      <ol>
+        {% for faq in page.faqs %}
+          <li>
+            <div class='faq-question'>{{faq.question}}</div>
+            <div class='faq-answer'>{{faq.answer}}</div>
+          </li>
+        {% endfor %}    
+      </ol>
       </div>
-    </div>
   </div>
-  <div class='four spacing'></div>
+  <div class='three spacing'></div>
 </div>

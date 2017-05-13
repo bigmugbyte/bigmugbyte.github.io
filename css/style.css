@@ -2546,13 +2546,15 @@ body {
   margin-bottom: 10px;
 }
 .google-play-button {
-    margin: 0 -14px;
+  display: inline-block;
+  margin: -13px -3px 7px -13px;
 }
 .google-play-button img {
   height: 73px;
 }
 .appstore-button {
-  margin-left: 10px;
+  display: inline-block;
+  margin: 0 10px 20px 0;
 }
 .appstore-button img {
   height: 48px;
@@ -2575,9 +2577,61 @@ body {
   margin-bottom: 0;
   align-self: flex-start;
 }
-
 .logo img {
   display: block;
+}
+.lazy-squirrel-banner {
+  background-image: url(/images/Squirrel-Banner.png);
+}
+
+.info-text {
+  text-shadow: 2px 2px 1px rgba(0,0,0,0.8);
+  color: #fff;
+}
+
+.home-intro {
+  background: #f5f5f5;
+  padding-top: 20px;
+}
+
+.home-intro .boxes {
+  display: flex;
+}
+
+.home-intro .box {
+  text-align: center;
+  padding: 50px 40px 50px;
+  margin: 20px;
+  background: #fff;
+  width: 33.3%;
+  min-width: 220px;
+  box-sizing: border-box;
+}
+
+.home-intro .lazy-squirrel-box {
+  background-image: url(/images/Squirrel-Banner-mobile.png);
+  background-size: cover;
+  background-position: 50% 100%;
+}
+.home-intro .lazy-squirrel-box h4,
+.home-intro .lazy-squirrel-box p
+ {
+  color: white;
+  text-shadow: 2px 2px 1px rgba(0,0,0,0.8);
+}
+
+.home-intro .box .fa {
+  font-size: 30px;
+  color: rgba(249, 206, 6, 0.8);
+}
+
+.faq-question {
+  font-weight: bold;
+  color: #333;
+}
+.faq-answer {
+  margin-top: 5px;
+  margin-bottom: 20px;
 }
 
 @media only screen and (max-width: 60em) {
@@ -2820,5 +2874,14 @@ body {
   }
   .modFullscreenSlider .fullscreen_slideshow .video_wrap {
     display: none;
+  }
+  .lazy-squirrel-banner {
+    background-image: url(/images/Squirrel-Banner-mobile.png);
+  }
+  .home-intro .boxes {
+    flex-wrap: wrap;
+  }
+  .home-intro .box {
+    width: 100%;
   }
 }
