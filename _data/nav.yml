@@ -13,7 +13,9 @@
     - name: News
       path: lazy-squirrel.html#news    
     - name: Help
-      path: lazy-squirrel.html#help        
+      path: lazy-squirrel.html#help
+    - name: Privacy policy
+      path: lazy-squirrel.html#privacy_policy
 - name: Contact
   path: contact.html
   section_id: contact
