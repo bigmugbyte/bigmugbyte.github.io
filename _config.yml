@@ -1,15 +1,11 @@
 # Site settings
 title: Thymeso
 #email: contact@thymeso.com
-email: beslervitalie@yahoo.com # temporary, until above email is ready
+email: contact@thymeso.com # temporary, until above email is ready
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Thymeso stands for the delight our small but dynamic team is doing things with.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://www.thymeso.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
 
 # Build settings
 markdown: kramdown
