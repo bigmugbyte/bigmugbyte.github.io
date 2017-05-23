@@ -21,8 +21,6 @@ slides:
         animation: bottom-to-top
       - text: "&nbsp;Great way to spend time"
         animation: bottom-to-top
-      - text: "&nbsp;Coming soon on Android and iOS"
-        animation: bottom-to-top
 screenshots:
   - images/screenshots/1.jpg
   - images/screenshots/2.jpg
@@ -102,20 +100,20 @@ news_tag: lazy-squirrel
             </div>
           {% endif %}
           <div class='buttons-wrapper {{slide.buttons.animation}}' style=''>          
-           <!--  <div class='row'>
+             <div class='row'>
               <div class='{{slide.buttons.class}} columns'>
                 <div class='two spacing'></div>
                 {% for button in slide.buttons.items %}
                   <a target='{{button.target}}' class='button {{button.class}}' href='{{button.url}}'>{{button.text}}</a>
                 {% endfor %}
-                <a class='google-play-button' href='https://play.google.com/store/apps/details?id=com.squirrel.run.free&hl=en&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
+                <!-- <a class='google-play-button' href='https://play.google.com/store/apps/details?id=com.squirrel.run.free&hl=en&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
                   <img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/>
                 </a>
                 <a class='appstore-button' href='https://itunes.apple.com/us/app/temple-run/id420009108?mt=8'>
                   <img alt='Download on the AppStore' src='images/Download_on_the_App_Store_Badge_US-UK_135x40.svg' />
-                </a>
+                </a> -->
               </div>
-            </div> -->
+            </div>
           </div>
         </li>
       {% endfor %}
