@@ -3,6 +3,8 @@ layout: post
 title:  Tom is designing the new site
 date:   2015-05-06 10:20:05
 categories: design
+tags:
+  - lazy-squirrel 
 author: admin
 images:
   - images/@stock/blog-1.jpg
