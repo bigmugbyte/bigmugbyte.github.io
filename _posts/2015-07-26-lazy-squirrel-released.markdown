@@ -17,5 +17,5 @@ excerpt:
 After a lot of effort invested our Squirrel is up and running(should be read as "Lazy and hungry"). Please, visit Lazy Squirrel's landing page to download it for iOS or Android.  
 Comments and suggestions are very appreciated. Send them to contact@thymeso.com.
 
-Happy nuts harvesting,
+Happy nuts harvesting,  
 The Thymeso team.
